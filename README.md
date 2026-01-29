@@ -14,47 +14,54 @@
 ---
 
 ## 🛠️ Tech Stack
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ---
 
 ## 📌 Featured Projects
 
 <details>
-  <summary>🦉 OwlPort Server</summary>
-  Carry‑anywhere portable server → [Repo Link](https://github.com/PrajwalK01/owlport-server)
+  <summary>💬 Chat Server</summary>
+  Module-based backend server for real-time messaging  
+  🔗 [View Repo](https://github.com/PrajwalK01/chat-server)
 </details>
 
 <details>
-  <summary>🔊 SonicCipher</summary>
-  Sound‑to‑code translator for universal communication → [Repo Link](https://github.com/PrajwalK01/soniccipher)
+  <summary>🌐 SocialSphere</summary>
+  Social media frontend with dynamic feed and user profiles  
+  🔗 [View Repo](https://github.com/PrajwalK01/socialsphere)
 </details>
 
 <details>
-  <summary>🤖 HoloGest Jarvis</summary>
-  Gesture + hologram AI assistant → [Repo Link](https://github.com/PrajwalK01/hologest-jarvis)
+  <summary>👤 GitHub-Profile</summary>
+  Customized GitHub homepage clone with metrics and streaks  
+  🔗 [View Repo](https://github.com/PrajwalK01/github-profile)
 </details>
 
 <details>
-  <summary>🕹️ IndiQuest</summary>
-  Mobile game spreading Karnataka culture → [Repo Link](https://github.com/PrajwalK01/indiquest)
+  <summary>📊 My-Portfolio</summary>
+  Personal portfolio with animations, dropdowns, and metrics  
+  🔗 [View Repo](https://github.com/PrajwalK01/MY-Portfolio)
 </details>
 
 <details>
-  <summary>📚 LitShare</summary>
-  Collaborative online library → [Repo Link](https://github.com/PrajwalK01/litshare)
+  <summary>🧠 LeetClone</summary>
+  Practice platform for coding challenges  
+  🔗 [View Repo](https://github.com/PrajwalK01/leetclone)
 </details>
 
 <details>
-  <summary>🚁 AeroGest Drone</summary>
-  Gesture‑controlled long‑range drone → [Repo Link](https://github.com/PrajwalK01/aerogest-drone)
+  <summary>📝 Attendance Clone</summary>
+  Backend module group for attendance tracking  
+  🔗 [View Repo](https://github.com/PrajwalK01/attendance-clone)
 </details>
 
 ---
@@ -77,25 +84,24 @@
 ---
 
 ## 🧪 Currently Building
-- 🦉 OwlPort Server – Mobile-hosted microserver  
-- 🔊 SonicCipher – Sound-to-code translator  
-- 🚁 AeroGest Drone – Gesture-controlled long-range drone  
-- 🕹️ IndiQuest – Culture-based mobile game  
+- 💬 Chat Server – Module-based structure  
+- 🌐 SocialSphere – Social media frontend  
+- 👤 GitHub-Profile – Customized GitHub homepage clone  
+- 📝 Attendance Clone – Backend module group  
 
 ---
 
 ## ✨ Fun Facts
-- I love turning ideas into scalable systems  
-- I believe clean code is a form of art  
-- I’m obsessed with futuristic tech like drones, holograms, and AI assistants  
+- 🎧 I love listening to music while coding  
+- 🏆 I’ve taken part in hackathons  
+- 🤖 I’ve created bots for Discord, Telegram, and AI assistants  
 
 ---
 
 ## 📊 GitHub Metrics
-![Metrics](https://github.com/PrajwalK01/PrajwalK01/blob/main/metrics.svg)
+![Metrics](https://github.com/PrajwalK01/MY-Portfolio/blob/main/metrics.svg)
 
 ---
 
 ## 🌐 Connect With Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)  
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white)](https://yourwebsite.com)
