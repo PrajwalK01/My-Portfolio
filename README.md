@@ -24,12 +24,20 @@
 ---
 
 ## 📂 Featured Projects
-- 🦉 [OwlPort Server](https://github.com/prajwal/owlport-server) – Carry‑anywhere portable server  
-- 🔊 [SonicCipher](https://github.com/prajwal/soniccipher) – Sound‑to‑code translator for universal communication  
-- 🤖 [HoloGest Jarvis](https://github.com/prajwal/hologest-jarvis) – Gesture + hologram AI assistant  
-- 🕹️ [IndiQuest](https://github.com/prajwal/indiquest) – Mobile game spreading Karnataka culture  
-- 📚 [LitShare](https://github.com/prajwal/litshare) – Collaborative online library  
-- 🚁 [AeroGest Drone](https://github.com/prajwal/aerogest-drone) – Gesture‑controlled long‑range drone  
+- 🦉 [OwlPort Server](https://github.com/prajwal/owlport-server)  
+- 🔊 [SonicCipher](https://github.com/prajwal/soniccipher)  
+- 🤖 [HoloGest Jarvis](https://github.com/prajwal/hologest-jarvis)  
+- 🕹️ [IndiQuest](https://github.com/prajwal/indiquest)  
+- 📚 [LitShare](https://github.com/prajwal/litshare)  
+- 🚁 [AeroGest Drone](https://github.com/prajwal/aerogest-drone)  
+
+---
+
+## 🐍 Contribution Graph
+![Snake animation](https://github.com/prajwal/prajwal/blob/output/github-contribution-grid-snake.svg)
+
+## 📊 Activity
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=prajwal&theme=react-dark)
 
 ---
 
