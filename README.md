@@ -1,8 +1,8 @@
 # Hi, I'm Prajwal 👋
 
-🚀 Building futuristic projects (AI, drones, servers, culture games)  
-💻 Skilled in Flask, Firebase, Jinja2, and scalable web systems  
-🎯 Goal: Create maintainable, professional solutions with clean architecture  
+🧠 Designing and developing forward-thinking software solutions built for scale, reliability, and the future 
+🎯 Experienced in Flask, Firebase, Jinja2, and scalable web architectures 
+💻 Focused on creating maintainable, production-ready solutions with clean, modular architecture
 
 ---
 
@@ -23,18 +23,20 @@
 
 ---
 
-## 📂 Featured Projects
-- 🦉 [OwlPort Server](https://github.com/prajwal/owlport-server)  
-- 🔊 [SonicCipher](https://github.com/prajwal/soniccipher)  
-- 🤖 [HoloGest Jarvis](https://github.com/prajwal/hologest-jarvis)  
-- 🕹️ [IndiQuest](https://github.com/prajwal/indiquest)  
-- 📚 [LitShare](https://github.com/prajwal/litshare)  
-- 🚁 [AeroGest Drone](https://github.com/prajwal/aerogest-drone)  
+## 📌 Featured Projects
+- 🦉 [OwlPort Server](https://github.com/prajwal/owlport-server) – Carry‑anywhere portable server  
+- 🔊 [SonicCipher](https://github.com/prajwal/soniccipher) – Sound‑to‑code translator for universal communication  
+- 🤖 [HoloGest Jarvis](https://github.com/prajwal/hologest-jarvis) – Gesture + hologram AI assistant  
+- 🕹️ [IndiQuest](https://github.com/prajwal/indiquest) – Mobile game spreading Karnataka culture  
+- 📚 [LitShare](https://github.com/prajwal/litshare) – Collaborative online library  
+- 🚁 [AeroGest Drone](https://github.com/prajwal/aerogest-drone) – Gesture‑controlled long‑range drone  
 
 ---
 
 ## 🐍 Contribution Graph
 ![Snake animation](https://github.com/prajwal/prajwal/blob/output/github-contribution-grid-snake.svg)
+
+---
 
 ## 📊 Activity
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=prajwal&theme=react-dark)
@@ -42,4 +44,5 @@
 ---
 
 ## 🌐 Connect With Me
-[LinkedIn](https://linkedin.com/in/yourprofile) | [Portfolio](https://yourwebsite.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)  
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white)](https://yourwebsite.com)
