@@ -4,6 +4,7 @@
 🧠 **Backend Specialist** — Flask, Firebase, scalable systems, modular architecture  
 🎯 **Mission** — Build maintainable, magical-feeling software that runs like clockwork
 
+## 🛠️ Tech Stack - **Languages:** HTML, CSS, JavaScript, Python, C++ - **Frameworks:** React, Node.js, Express.js - **Databases:** MongoDB, Firebase - **Tools:** Git, GitHub, VS Code
 ---
 
 ### 🔥 GitHub Stats
