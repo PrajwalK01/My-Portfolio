@@ -1,23 +1,64 @@
-# 👋 Hi, I'm Prajwal
+# Hi, I'm Prajwal K 👋
 
-🚀 **Futuristic Software Builder** — AI servers, drones, culture-driven games  
-🧠 **Backend Specialist** — Flask, Firebase, scalable systems, modular architecture  
-🎯 **Mission** — Build maintainable, magical-feeling software that runs like clockwork
+<div align="center">
 
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=22C55E&center=true&vCenter=true&width=800&lines=Futuristic+Software+Builder;Backend+Specialist+%7C+Flask+%7C+Firebase;AI+servers+%7C+Drones+%7C+Culture-driven+Games;Building+maintainable%2C+magical+software)
 
+[![Profile Views](https://komarev.com/ghpvc/?username=PrajwalK01&color=22c55e&style=flat-square)](https://github.com/PrajwalK01)
+[![Followers](https://img.shields.io/github/followers/PrajwalK01?style=social)](https://github.com/PrajwalK01)
+[![Stars](https://img.shields.io/github/stars/PrajwalK01?style=social)](https://github.com/PrajwalK01)
 
-### 🔥 GitHub Stats
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=PrajwalK01&theme=tokyonight&hide_border=true)
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PrajwalK01&show_icons=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PrajwalK01&layout=compact&theme=tokyonight)
-
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 About Me
+
+- **Futuristic Software Builder** — AI servers, drones, culture-driven games
+- **Backend Specialist** — Flask, Firebase, scalable systems, modular architecture
+- **Mission** — Build maintainable, magical-feeling software that runs like clockwork
+
+---
+
+## 🟢 Daily Green Graph (Streak Focus)
+
+<div align="center">
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=PrajwalK01&theme=tokyonight&hide_border=true&ring=22c55e&fire=22c55e&currStreakLabel=22c55e)
+
+</div>
+
+---
+
+## 📊 Advanced GitHub Analytics
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PrajwalK01&show_icons=true&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PrajwalK01&layout=compact&theme=tokyonight&hide_border=true)
+
+</div>
+
+<div align="center">
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=PrajwalK01&theme=tokyo-night&hide_border=true&line=22c55e&point=ffffff)
+
+</div>
+
+---
+
+## 🎮 Daily Quest (Gamified Progress)
+
+- ✅ **Code Quest**: Ship at least one meaningful commit
+- ✅ **Build Quest**: Push a feature or refactor
+- ✅ **Learn Quest**: Study an algorithm or system design concept
+- ✅ **Share Quest**: Post a learning or demo
+
+> _“Level up every day — small moves, massive momentum.”_
+
+---
+
+## 🧠 Tech Stack
 
 **Languages & Frameworks**  
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -31,7 +72,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
 ---
 
@@ -48,46 +89,32 @@
 
 ---
 
-## 🐍 Contribution Graph
+## 🐍 Contribution Snake
 
 ![Snake animation](https://github.com/PrajwalK01/PrajwalK01/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
-## 📊 Activity Overview
+## 🧩 3D Contribution View
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=PrajwalK01&theme=tokyo-night)
-
----
-
-## 👀 Profile Insights
-
-![Profile Views](https://komarev.com/ghpvc/?username=PrajwalK01&color=blue&style=flat-square)  
-![Followers](https://img.shields.io/github/followers/PrajwalK01?style=social)  
-![Stars](https://img.shields.io/github/stars/PrajwalK01?style=social)
+![3D Contributions](https://github.com/PrajwalK01/PrajwalK01/blob/main/profile-3d-contrib/profile-night-rainbow.svg)
 
 ---
 
 ## 🧪 Currently Building
 
-- 💬 Chat Server — Real-time messaging backend  
-- 🌐 SocialSphere — Social media frontend  
-- 👤 GitHub-Profile — Personalized GitHub homepage  
+- 💬 Chat Server — Real-time messaging backend
+- 🌐 SocialSphere — Social media frontend
+- 👤 GitHub-Profile — Personalized GitHub homepage
 - 📝 Attendance Clone — Modular backend for tracking
 
 ---
 
 ## ✨ Fun Facts
 
-- 🎧 Music fuels my code  
-- 🏆 Hackathon enthusiast  
+- 🎧 Music fuels my code
+- 🏆 Hackathon enthusiast
 - 🤖 Bot builder for Discord, Telegram & AI assistants
-
----
-
-## 📊 GitHub Metrics
-
-![Metrics](https://github.com/PrajwalK01/MY-Portfolio/blob/main/metrics.svg)
 
 ---
 
