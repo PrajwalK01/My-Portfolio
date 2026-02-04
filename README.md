@@ -1,30 +1,17 @@
-<<<<<<< codex/enhance-green-graph-with-advanced-features-ncy7zu
-# Prajwal K — Physics × Math × Software
+# I'm Prajwal Gowda K 
 
 <div align="center">
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1200&color=22C55E&center=true&vCenter=true&width=900&lines=IIT+Student+%7C+Physics+%2B+Mathematics;Futuristic+Software+Builder;AI+Systems+%7C+Drones+%7C+Culture-driven+Games;Research-minded+Engineering+%7C+Clean+Architecture)
 
+                                           =======
 [![Profile Views](https://komarev.com/ghpvc/?username=PrajwalK01&color=22c55e&style=flat-square)](https://github.com/PrajwalK01)
 [![Followers](https://img.shields.io/github/followers/PrajwalK01?style=social)](https://github.com/PrajwalK01)
 [![Stars](https://img.shields.io/github/stars/PrajwalK01?style=social)](https://github.com/PrajwalK01)
 
-=======
-
-
-[![Profile Views](https://komarev.com/ghpvc/?username=PrajwalK01&color=22c55e&style=flat-square)](https://github.com/PrajwalK01)
-[![Followers](https://img.shields.io/github/followers/PrajwalK01?style=social)](https://github.com/PrajwalK01)
-[![Stars](https://img.shields.io/github/stars/PrajwalK01?style=social)](https://github.com/PrajwalK01)
+                                           =======
 
 </div>
-
----
-
-
-- **Backend Specialist** — Flask, Firebase, scalable systems, modular architecture
-- **Mission** — Build maintainable, magical-feeling software that runs like clockwork
-
----
 
 ## 🟢 Daily Green Graph (Streak Focus)
 
@@ -35,22 +22,11 @@
 >>>>>>> main
 </div>
 
----
-
-<<<<<<< codex/enhance-green-graph-with-advanced-features-ncy7zu
-## 🧪 Research Dossier
-
-- **IIT Student (Physics + Math)** — Engineering ideas with proofs, experiments, and clean systems
-- **Backend Specialist** — Flask, Firebase, scalable systems, modular architecture
-- **Mission** — Build maintainable, magical-feeling software that runs like clockwork
-
----
-
 ## 🖥️ Command Center
 
 <table align="center">
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="100%">
       <img src="https://github-readme-stats.vercel.app/api?username=PrajwalK01&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
     </td>
     <td align="center" width="50%">
@@ -72,19 +48,7 @@
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PrajwalK01&layout=compact&theme=tokyonight&hide_border=true)
 
 
----
-
-## 🎮 Daily Quest (Gamified Progress)
-
-- ✅ **Code Quest**: Ship at least one meaningful commit
-- ✅ **Build Quest**: Push a feature or refactor
-- ✅ **Learn Quest**: Study an algorithm or system design concept
-- ✅ **Share Quest**: Post a learning or demo
-
-
-
----
-
+-
 ## 🧠 Tech Stack
 
 **Languages & Frameworks**  
@@ -103,21 +67,8 @@
 
 ---
 
-## 🧪 Highlighted Work
 
-| Project | Focus | Link |
-|--------|-------|------|
-| 💬 Chat Server | Modular backend for real-time messaging | [View Repo](https://github.com/PrajwalK01/chat-server) |
-| 🌐 SocialSphere | Dynamic social media frontend | [View Repo](https://github.com/PrajwalK01/socialsphere) |
-| 👤 GitHub-Profile | GitHub homepage clone with metrics | [View Repo](https://github.com/PrajwalK01/github-profile) |
-| 📊 My-Portfolio | Personal site with animations & metrics | [View Repo](https://github.com/PrajwalK01/MY-Portfolio) |
-| 🧠 LeetClone | Coding challenge practice platform | [View Repo](https://github.com/PrajwalK01/leetclone) |
-| 📝 Attendance Clone | Backend module for attendance tracking | [View Repo](https://github.com/PrajwalK01/attendance-clone) |
->>>>>>> main
 
-<div align="center">
-
-<<<<<<< codex/enhance-green-graph-with-advanced-features-ncy7zu
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=PrajwalK01&theme=tokyonight&hide_border=true&ring=22c55e&fire=22c55e&currStreakLabel=22c55e)
 =======
 ## 🐍 Contribution Snake
@@ -127,7 +78,7 @@
 
 ---
 
-<<<<<<< codex/enhance-green-graph-with-advanced-features-ncy7zu
+
 ## 🧠 Tech Arsenal
 
 <div align="center">
@@ -136,15 +87,7 @@
 
 </div>
 
----
 
-## 🧩 Signal & Symmetry
-
-```
-Momentum = Consistency × Time
-ΔSkills = LearningRate · ΔDay
-Signal = Discipline / Noise
-```
 
 > _Treat every commit as an experiment. Measure. Improve. Repeat._
 
@@ -195,7 +138,7 @@ Signal = Discipline / Noise
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com)
-<<<<<<< codex/enhance-green-graph-with-advanced-features-ncy7zu
+
 
 </div>
 =======
