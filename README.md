@@ -15,9 +15,9 @@
 ## 🚀 About Me
 
 <details open>
-<summary><strong>Open Profile Dossier</strong></summary>
+<summary><strong>Open Research Dossier</strong></summary>
 
-- **IIT Student** — Building high-impact systems with a research mindset
+- **IIT Student (Physics + Math)** — Engineering ideas with proofs, experiments, and clean systems
 - **Futuristic Software Builder** — AI servers, drones, culture-driven games
 - **Backend Specialist** — Flask, Firebase, scalable systems, modular architecture
 - **Mission** — Build maintainable, magical-feeling software that runs like clockwork
@@ -33,6 +33,23 @@
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=PrajwalK01&theme=tokyonight&hide_border=true&ring=22c55e&fire=22c55e&currStreakLabel=22c55e)
 
 </div>
+
+---
+
+## 📐 Signal & Symmetry
+
+<details open>
+<summary><strong>Math/Physics Aesthetic</strong></summary>
+
+```
+Momentum = Consistency × Time
+ΔSkills = LearningRate · ΔDay
+Signal = Discipline / Noise
+```
+
+> _Treat every commit as an experiment. Measure. Improve. Repeat._
+
+</details>
 
 ---
 
@@ -67,11 +84,12 @@
 ## 🧭 The Game Map
 
 <details open>
-<summary><strong>Quest Board</strong></summary>
+<summary><strong>Physics × Math Quest Board</strong></summary>
 
-- 🟢 **Green Graph Streak**: Maintain daily commits
+- 🟢 **Green Graph Streak**: Maintain daily commits (energy stays conserved)
 - 🧠 **Lab Challenge**: Build one experimental prototype weekly
 - ⚙️ **Systems Raid**: Refactor or optimize one service
+- 📐 **Proof Sprint**: Solve one math/CS proof or derivation weekly
 - 🛰️ **Research Drop**: Publish one learning note or demo
 
 </details>
@@ -104,7 +122,7 @@
 ## 📌 Featured Projects
 
 <details open>
-<summary><strong>Enter Project Vault</strong></summary>
+<summary><strong>Enter Project Vault (Lab Archive)</strong></summary>
 
 | Project | Description | Link |
 |--------|-------------|------|
@@ -134,7 +152,7 @@
 ## 🧪 Currently Building
 
 <details>
-<summary><strong>Live Missions</strong></summary>
+<summary><strong>Live Missions (Active Experiments)</strong></summary>
 
 - 💬 Chat Server — Real-time messaging backend
 - 🌐 SocialSphere — Social media frontend
