@@ -1,4 +1,4 @@
-# 🌌 Anti-Gravity Developer Portfolio (5th Dimension Edition)
+# 🌌 Prajwal  Portfolio 
 
 **Live Demo:** [Add your deployed link here]
 
@@ -90,4 +90,4 @@ This app is ready for deployment on platforms like **Render**, **Railway**, or *
 - **Portfolio**: [Visit Live Site](https://your-portfolio-link.com)
 
 ---
-© 2026 Prajwal. Built with Anti-Gravity.
+© 2026 Prajwal. Built with -Gravity.
