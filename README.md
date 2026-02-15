@@ -1,6 +1,6 @@
 # 🌌 Prajwal  Portfolio 
 
-**Live Demo:** [Add your deployed link here]
+**Live Demo:** (https://prajwal-portfolio-n1zb.onrender.com/contact)
 
 Welcome to the **5th Dimension**. This is a futuristic, highly interactive developer portfolio built with **Python (Flask)** and **Canvas API**. It features a continuously moving hyper-dimensional background, delayed gravity animations, and dynamic GitHub integration.
 
@@ -87,7 +87,7 @@ This app is ready for deployment on platforms like **Render**, **Railway**, or *
 ## 📬 Contact
 
 - **GitHub**: [PrajwalK01](https://github.com/PrajwalK01)
-- **Portfolio**: [Visit Live Site](https://your-portfolio-link.com)
+- **Portfolio**: [Visit Live Site][(https://your-portfolio-link.com)](https://prajwal-portfolio-n1zb.onrender.com/contact)
 
 ---
 © 2026 Prajwal. Built with -Gravity.
