@@ -1,15 +1,7 @@
 🌌 Prajwal's Portfolio – 5th Dimension
-<div align="center">
+🚀 Welcome to the 5th Dimension — a futuristic, interactive developer portfolio built with Python (Flask) and Canvas API. It features a hyper-dimensional background, delayed gravity animations, and dynamic GitHub integration.
 
-<!-- Logo -->
-<img src="static/logo.png" alt="Portfolio Logo" width="120" height="120">
-
-<h3>🚀 Enter the 5th Dimension</h3>
-<p>A futuristic, interactive developer portfolio built with <b>Python (Flask)</b> and <b>Canvas API</b>.</p>
-
-<a href="https://my-portfolio-dun-ten-94.vercel.app/"><b>🔗 Live Demo</b></a>
-
-</div>
+🔗 Live Demo: https://my-portfolio-dun-ten-94.vercel.app/
 
 ✨ Features
 🌠 Visual Experience
@@ -96,7 +88,6 @@ My-Portfolio/
 │   ├── js/
 │   │   ├── dimension_bg.js # 4D background animation
 │   │   └── main.js        # UI interactions
-│   └── logo.png           # Portfolio logo
 │
 └── templates/
     ├── base.html          # Base template
@@ -106,28 +97,3 @@ My-Portfolio/
     ├── skills.html        # Skills matrix
     ├── 404.html           # Not found page
     └── 500.html           # Server error page
-🖼️ Adding a Logo
-Place your logo file inside static/ (e.g., static/logo.png).
-
-In your README, reference it like this:
-
-markdown
-<img src="static/logo.png" alt="Portfolio Logo" width="120" height="120">
-src points to the file path.
-
-alt is the description (important for accessibility).
-
-width/height control size.
-
-If you want the logo to glow or match your anti-gravity theme, you can style it in style.css:
-
-css
-img[alt="Portfolio Logo"] {
-    filter: drop-shadow(0 0 10px cyan);
-    animation: float 4s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
