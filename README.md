@@ -1,99 +1,85 @@
-🌌 Prajwal's Portfolio – 5th Dimension
-🚀 Welcome to the 5th Dimension — a futuristic, interactive developer portfolio built with Python (Flask) and Canvas API. It features a hyper-dimensional background, delayed gravity animations, and dynamic GitHub integration.
+# 🌌 PRAJWAL'S PORTFOLIO — 5TH DIMENSION
 
-🔗 Live Demo: https://my-portfolio-dun-ten-94.vercel.app/
+> A futuristic, immersive full-stack developer portfolio built with Flask and advanced Canvas animations.
 
-✨ Features
-🌠 Visual Experience
-Immersive 4D Background with wireframe particles
+🔗 **Live Demo:** https://my-portfolio-dun-ten-94.vercel.app/
 
-Color-Shifting Environment that cycles through the spectrum
+---
 
-Cyberpunk-style Glitch Effects
+## 🚀 Overview
 
-Terminal Typography for a hacking-inspired interface
+**5TH DIMENSION** is an interactive developer portfolio combining backend engineering with immersive front-end physics animations.
 
-🎮 Interactive Elements
-Delayed Gravity Cards with staggered animations
+This project demonstrates:
 
-GitHub Integration showing live repositories with language colors
+- Full-stack development
+- Real-time GitHub API integration
+- Physics-based UI animations
+- Secure backend practices
+- Performance optimization techniques
 
-Matrix Rain Effect toggle on skills page
+---
 
-Smooth Hover Animations across UI
+## ✨ Features
 
-⚙️ Backend Features
-Visitor Tracking (IP + timestamp)
+### 🌠 Visual Experience
 
-Cached API Calls to avoid GitHub rate limits
+- 4D Wireframe Particle Background (Canvas API)
+- Dynamic Color Spectrum Cycling
+- Cyberpunk Glitch Effects
+- Terminal-Style Typography
+- Matrix Rain Toggle Mode
+- Smooth UI Hover Animations
 
-Custom Error Pages (404/500)
+---
 
-Security Headers for XSS protection
+### 🎮 Interactive UI System
 
-🛠️ Tech Stack
-Technology	Purpose
-Python/Flask	Backend server & routing
-SQLAlchemy	Database ORM
-HTML5/CSS3	Structure & styling
-JavaScript	Canvas animations & interactivity
-GitHub API	Fetch live repository data
-SQLite	Development database
-📦 Installation
-Clone the Repository
+- Delayed Gravity Cards (staggered animation physics)
+- Animated Skill Matrix
+- Smooth transitions across sections
+- Dynamic UI response effects
 
-bash
+---
+
+### 🔗 GitHub Integration
+
+- Fetches live repositories via GitHub API
+- Displays language-based color indicators
+- Implements caching to prevent rate-limit issues
+- Handles API errors gracefully
+
+---
+
+### ⚙️ Backend Features
+
+- Visitor tracking (IP + timestamp logging)
+- Cached API calls
+- Custom 404 and 500 error pages
+- Security headers (XSS protection)
+- Environment variable configuration
+- SQLite database (development)
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology     | Purpose                          |
+|---------------|----------------------------------|
+| Python        | Backend logic                   |
+| Flask         | Web framework & routing         |
+| SQLAlchemy    | ORM & database management       |
+| SQLite        | Development database            |
+| HTML5/CSS3    | Layout & styling                |
+| JavaScript    | Canvas animations & UI logic    |
+| GitHub API    | Live repository data            |
+
+---
+
+## 📦 Installation
+
+### 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/PrajwalK01/My-Portfolio.git
 cd My-Portfolio
-Create a Virtual Environment
-
-bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# Mac/Linux
-python3 -m venv venv
-source venv/bin/activate
-Install Dependencies
-
-bash
-pip install -r requirements.txt
-Set up Environment Variables  
-Create a .env file:
-
-env
-FLASK_DEBUG=True
-SECRET_KEY=your-super-secret-key-here
-DATABASE_URL=sqlite:///site.db
-Run the Application
-
-bash
-python app.py
-Then open: http://127.0.0.1:5000
-
-📂 Project Structure
-Code
-My-Portfolio/
-│
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
-├── Procfile               # Deployment config
-├── .env                   # Environment variables (local)
-├── .gitignore             # Git ignore rules
-│
-├── static/
-│   ├── css/
-│   │   └── style.css      # Styles
-│   ├── js/
-│   │   ├── dimension_bg.js # 4D background animation
-│   │   └── main.js        # UI interactions
-│
-└── templates/
-    ├── base.html          # Base template
-    ├── home.html          # Landing page
-    ├── about.html         # About me page
-    ├── projects.html      # GitHub projects
-    ├── skills.html        # Skills matrix
-    ├── 404.html           # Not found page
-    └── 500.html           # Server error page
