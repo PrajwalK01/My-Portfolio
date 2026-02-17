@@ -1,6 +1,6 @@
 # 🌌 Prajwal's Portfolio - 5th Dimension
 
-**Live Demo:** https://vercel.com/prajwalk01s-projects/my-portfolio
+**Live Demo:**https://my-portfolio-dun-ten-94.vercel.app/
 
 Welcome to the **5th Dimension**. This is a futuristic, highly interactive developer portfolio built with **Python (Flask)** and **Canvas API**. It features a continuously moving hyper-dimensional background, delayed gravity animations, and dynamic GitHub integration.
 
