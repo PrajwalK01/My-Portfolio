@@ -83,3 +83,87 @@ This project demonstrates:
 ```bash
 git clone https://github.com/PrajwalK01/My-Portfolio.git
 cd My-Portfolio
+
+2️⃣ Create Virtual Environment
+Windows
+python -m venv venv
+venv\Scripts\activate
+
+Mac/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Configure Environment Variables
+
+Create a .env file:
+
+FLASK_DEBUG=True
+SECRET_KEY=your-super-secret-key
+DATABASE_URL=sqlite:///site.db
+GITHUB_USERNAME=your-username
+
+5️⃣ Run Application
+python app.py
+
+
+Open your browser:
+
+http://127.0.0.1:5000
+
+📂 Project Structure
+My-Portfolio/
+│
+├── app.py
+├── requirements.txt
+├── Procfile
+├── .env
+├── .gitignore
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── dimension_bg.js
+│   │   └── main.js
+│
+└── templates/
+    ├── base.html
+    ├── home.html
+    ├── about.html
+    ├── projects.html
+    ├── skills.html
+    ├── 404.html
+    └── 500.html
+
+🔐 Security Features
+
+XSS protection headers
+
+Secure environment variable handling
+
+API rate-limit protection
+
+Custom production-safe error pages
+
+📈 Future Improvements
+
+PostgreSQL production database
+
+Redis caching layer
+
+Docker deployment support
+
+Admin analytics dashboard
+
+Performance optimization (lazy loading)
+
+Light/Dark mode toggle
+
+👨‍💻 Author
+
+Prajwal K
+Full Stack Developer
+Backend & Interactive Systems Engineer
