@@ -4,7 +4,7 @@
 
 Welcome to the **5th Dimension**. This is a futuristic, highly interactive developer portfolio built with **Python (Flask)** and **Canvas API**. It features a continuously moving hyper-dimensional background, delayed gravity animations, and dynamic GitHub integration.
 
-![Portfolio Preview](https://github.com/PrajwalK01/My-Portfolio/raw/main/preview.png)
+![Portfolio Preview]https://my-portfolio-dun-ten-94.vercel.app/
 
 ## 🚀 Features
 
