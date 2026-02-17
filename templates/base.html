@@ -4,38 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} | Prajwal</title>
-    <!-- Fonts: Professional Sans + Hacking Mono -->
+    
+    <!-- SEO -->
+    <meta name="description" content="{% block meta_description %}Prajwal's developer portfolio - Exploring the cosmos of code with Python, Flask, and modern web technologies{% endblock %}">
+    <meta name="author" content="Prajwal">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ title }} | Prajwal">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.url }}">
+    
+    <title>{% block title %}{{ title }}{% endblock %} | Prajwal</title>
+    
+    <!-- Preconnect for fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap"
-        rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons (deferred) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+    
+    <!-- Favicon from GitHub -->
+    <link rel="icon" type="image/png" href="https://github.com/PrajwalK01.png?size=32">
+    <link rel="apple-touch-icon" href="https://github.com/PrajwalK01.png?size=180">
+    
     <!-- Styles -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- 5th Dimension Background -->
-    <div id="canvas-container"></div>
+    <!-- Background Canvas (decorative) -->
+    <div id="canvas-container" aria-hidden="true"></div>
 
-    <!-- Navigation (Back Button) -->
+    <!-- Navigation -->
     {% if request.endpoint != 'home' %}
-    <nav class="top-nav">
-        <a href="{{ url_for('home') }}" class="back-link"><i class="fas fa-terminal"></i> ../Home</a>
+    <nav class="top-nav" aria-label="Navigation">
+        <a href="{{ url_for('home') }}" class="back-link" aria-label="Go back to home">
+            <i class="fas fa-terminal" aria-hidden="true"></i> ../Home
+        </a>
     </nav>
     {% endif %}
 
-    <!-- Main Content Area -->
-    <main class="content-wrapper">
+    <!-- Main Content -->
+    <main id="main-content" class="content-wrapper">
         {% block content %}{% endblock %}
     </main>
 
-    <script src="{{ url_for('static', filename='js/dimension_bg.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Footer (optional block) -->
+    {% block footer %}{% endblock %}
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/dimension_bg.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+    
+    <!-- Fallback for noscript -->
+    <noscript>
+        <div style="background: #050510; color: white; padding: 20px; text-align: center;">
+            JavaScript is required for the full experience. Please enable JavaScript for animations and interactive features.
+        </div>
+    </noscript>
 </body>
 
 </html>

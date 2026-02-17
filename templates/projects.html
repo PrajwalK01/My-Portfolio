@@ -2,67 +2,79 @@
 
 {% block content %}
 <div class="page-container" id="projects-page">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
-        <h2 class="section-title">All Repositories</h2>
-        <a href="https://github.com/PrajwalK01" target="_blank" class="btn" style="font-size: 0.9rem;">View Profile <i
-                class="fab fa-github"></i></a>
+    <div class="projects-header">
+        <h2 class="section-title glitch-text" data-text=">_ REPOSITORIES">>_ REPOSITORIES</h2>
+        <a href="https://github.com/PrajwalK01" target="_blank" class="btn">
+            <i class="fab fa-github"></i> VIEW PROFILE
+        </a>
     </div>
 
     <div class="projects-grid" id="repos-container">
-        <!-- Projects will be injected here via JS -->
-        <div style="grid-column: 1/-1; text-align: center; color: var(--neon-blue); padding: 50px;">
-            <i class="fas fa-circle-notch fa-spin fa-3x"></i>
-            <p style="margin-top: 15px; font-family: var(--font-hack);">Scanning GitHub Sector...</p>
-        </div>
+        {% if repos %}
+            {% for repo in repos %}
+            <div class="project-card" onclick="window.open('{{ repo.html_url }}', '_blank')">
+                <div class="card-header">
+                    <i class="fas fa-terminal"></i>
+                    <h3>{{ repo.name }}</h3>
+                </div>
+                <p>{{ repo.description or 'No description provided.' }}</p>
+                <div class="repo-stats">
+                    {% if repo.language %}
+                    <span class="language">
+                        <!-- Fix: Use data attribute instead of inline style -->
+                        <span class="lang-dot" data-language="{{ repo.language }}"></span>
+                        {{ repo.language }}
+                    </span>
+                    {% endif %}
+                    <span><i class="fas fa-star"></i> {{ repo.stargazers_count }}</span>
+                    <span><i class="fas fa-code-branch"></i> {{ repo.forks_count }}</span>
+                </div>
+                {% if repo.topics %}
+                <div class="repo-topics">
+                    {% for topic in repo.topics[:3] %}
+                    <span class="topic">{{ topic }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="no-repos">
+                <i class="fas fa-code-branch"></i>
+                <p>No repositories found. Check GitHub profile directly.</p>
+                <a href="https://github.com/PrajwalK01" target="_blank" class="btn">Visit GitHub</a>
+            </div>
+        {% endif %}
     </div>
 </div>
 
+<!-- Add this script to handle language colors -->
 <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-        const container = document.getElementById('repos-container');
-        const username = 'PrajwalK01';
-
-        try {
-            const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
-            if (!response.ok) throw new Error('Network response was not ok');
-
-            const repos = await response.json();
-
-            // Clear loading spinner
-            container.innerHTML = '';
-
-            repos.forEach(repo => {
-                // Skip forked repos if preferred, or keep all
-                // if (repo.fork) return; 
-
-                const card = document.createElement('div');
-                card.className = 'project-card';
-                card.onclick = () => window.open(repo.html_url, '_blank');
-
-                card.innerHTML = `
-                <h3><i class="fas fa-book-bookmark" style="font-size: 0.9em; margin-right: 8px;"></i>${repo.name}</h3>
-                <p>${repo.description || 'No description provided.'}</p>
-                <div class="repo-stats">
-                    ${repo.language ? `<span><i class="fas fa-code"></i> ${repo.language}</span>` : ''}
-                    <span><i class="fas fa-star"></i> ${repo.stargazers_count}</span>
-                    <span><i class="fas fa-code-branch"></i> ${repo.forks_count}</span>
-                </div>
-            `;
-
-                container.appendChild(card);
-            });
-
-            if (repos.length === 0) {
-                container.innerHTML = '<p style="text-align: center; grid-column: 1/-1;">No public repositories found.</p>';
-            }
-
-        } catch (error) {
-            console.error('Error fetching repos:', error);
-            container.innerHTML = `<p style="text-align: center; color: #ff5555; grid-column: 1/-1;">
-            Error connecting to GitHub. <br>
-            <a href="https://github.com/${username}" target="_blank" style="color: var(--neon-blue);">Visit GitHub Profile Directly</a>
-        </p>`;
-        }
+document.addEventListener('DOMContentLoaded', function() {
+    const langDots = document.querySelectorAll('.lang-dot');
+    
+    const languageColors = {
+        'Python': '#3572A5',
+        'JavaScript': '#f7df1e',
+        'HTML': '#e34c26',
+        'CSS': '#563d7c',
+        'C++': '#f34b7d',
+        'Java': '#b07219',
+        'TypeScript': '#3178c6',
+        'PHP': '#4f5d95',
+        'Ruby': '#701516',
+        'Go': '#00ADD8',
+        'Rust': '#dea584',
+        'Shell': '#89e051',
+        'C': '#555555',
+        'C#': '#178600'
+    };
+    
+    langDots.forEach(dot => {
+        const language = dot.getAttribute('data-language');
+        const color = languageColors[language] || '#00f7ff'; // Default to neon blue
+        dot.style.backgroundColor = color;
     });
+});
 </script>
 {% endblock %}

@@ -2,9 +2,36 @@
 
 {% block content %}
 <div class="home-container">
-    <!-- Hacking Style Typewriter Text -->
+    <!-- Profile Logo Section -->
+    <div class="profile-section">
+        {% if profile and profile.avatar_url %}
+        <div class="profile-logo">
+            <img src="{{ profile.avatar_url }}" alt="Prajwal's Avatar" class="avatar">
+            <div class="avatar-glow"></div>
+        </div>
+        {% else %}
+        <div class="profile-logo default-logo">
+            <i class="fas fa-user-astronaut"></i>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Matrix-style Hacking Text -->
     <div class="welcome-wrapper">
-        <h1 class="welcome-text hacking-font">Welcome to My Page_</h1>
+        <div class="glitch-text" data-text=">_ SYSTEM_ACCESS.exe">>_ SYSTEM_ACCESS.exe</div>
+        
+        <!-- Your name with glitch effect -->
+        <div class="user-name">
+            <span class="prompt">>></span>
+            <span class="name-glitch" data-text="PRAJWAL">PRAJWAL</span>
+            <span class="cursor-blink">_</span>
+        </div>
+        
+        <div class="terminal-line">
+            <span class="prompt">$</span>
+            <span class="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
+        </div>
     </div>
 
     <div class="hanging-cards-container">
@@ -12,8 +39,8 @@
         <a href="{{ url_for('about') }}" class="hanging-card">
             <div class="thread"></div>
             <div class="card-body">
-                <i class="fas fa-user-astronaut"></i>
-                <span>ABOUT</span>
+                <i class="fas fa-user-secret"></i>
+                <span>>_ ABOUT.exe</span>
             </div>
         </a>
 
@@ -22,7 +49,7 @@
             <div class="thread"></div>
             <div class="card-body">
                 <i class="fas fa-code-branch"></i>
-                <span>PROJECTS</span>
+                <span>>_ PROJECTS.exe</span>
             </div>
         </a>
 
@@ -30,19 +57,29 @@
         <a href="{{ url_for('skills') }}" class="hanging-card">
             <div class="thread"></div>
             <div class="card-body">
-                <i class="fas fa-bolt"></i>
-                <span>SKILLS</span>
+                <i class="fas fa-microchip"></i>
+                <span>>_ SKILLS.exe</span>
             </div>
         </a>
+    </div>
 
-        <!-- Card 4: Contact -->
-        <a href="{{ url_for('contact') }}" class="hanging-card">
-            <div class="thread"></div>
-            <div class="card-body">
+    <!-- Social Links Section -->
+    <div class="social-links-container">
+        <h3 class="social-title">>_ CONNECT.exe</h3>
+        <div class="social-links">
+            <a href="https://github.com/PrajwalK01" target="_blank" class="social-link" title="GitHub">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="mailto:prajwal.k@abhyudayakkss.org" class="social-link" title="Email">
                 <i class="fas fa-envelope"></i>
-                <span>CONTACT</span>
-            </div>
-        </a>
+                <span>Email</span>
+            </a>
+            <a href="https://linkedin.com/in/prajwal" target="_blank" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        </div>
     </div>
 </div>
 {% endblock %}

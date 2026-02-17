@@ -1,93 +1,103 @@
-# 🌌 Prajwal  Portfolio 
+# 🌌 Prajwal's Portfolio - 5th Dimension
 
-**Live Demo:** (https://prajwal-portfolio-n1zb.onrender.com/)
+**Live Demo:** [prajwal-portfolio-n1zb.onrender.com](https://prajwal-portfolio-n1zb.onrender.com/)
 
 Welcome to the **5th Dimension**. This is a futuristic, highly interactive developer portfolio built with **Python (Flask)** and **Canvas API**. It features a continuously moving hyper-dimensional background, delayed gravity animations, and dynamic GitHub integration.
 
+![Portfolio Preview](https://github.com/PrajwalK01/My-Portfolio/raw/main/preview.png)
+
 ## 🚀 Features
 
-- **5th Dimension Theme**:
-  - Immersive, rotating 4D wireframe background (HTML5 Canvas).
-  - "Hacking" typewriter typography on the home page.
-  - Delayed "gravity" animations for navigation cards.
-- **Backend**: 
-  - Powered by **Flask** (Python).
-  - **SQLite Database** to track visitor timestamps.
-- **Dynamic Content**:
-  - **GitHub API Integration**: Automatically fetches and displays *all* your public repositories on the Projects page.
-- **Responsive Design**: Fully optimized for Desktop, Tablet, and Mobile.
+### 🌠 Visual Experience
+- **Immersive 4D Background**: Rotating wireframe particles with depth perception
+- **Color-Shifting Environment**: Background slowly transitions through the spectrum
+- **Glitch Effects**: Cyberpunk-inspired text animations
+- **Terminal Interface**: Hacking-style typography throughout
+
+### 🎮 Interactive Elements
+- **Delayed Gravity Cards**: Navigation cards "fall" into place with staggered timing
+- **GitHub Integration**: Live repository fetching with language colors
+- **Matrix Rain Effect**: On skills page (optional toggle)
+- **Smooth Animations**: All hover states and transitions
+
+### ⚙️ Backend Features
+- **Visit Tracking**: Records visitor IPs and timestamps
+- **Cached API Calls**: Prevents GitHub rate limiting
+- **Error Handling**: Custom 404/500 pages
+- **Security Headers**: XSS protection, frame options, etc.
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML5, CSS3 (Neon/Glassmorphism), JavaScript (Canvas API).
-- **Backend**: Python 3, Flask, SQLAlchemy.
-- **Database**: SQLite (Local), Postgres (Production ready).
+| Technology | Purpose |
+|------------|---------|
+| **Python/Flask** | Backend server & routing |
+| **SQLAlchemy** | Database ORM |
+| **HTML5/CSS3** | Structure & styling |
+| **JavaScript** | Canvas animations & interactivity |
+| **GitHub API** | Fetch live repository data |
+| **SQLite** | Development database |
 
-## 💻 Installation & Setup
+## 📦 Installation
 
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/PrajwalK01/My-Portfolio.git
    cd My-Portfolio
-   ```
 
 2. **Create a Virtual Environment**
-   ```bash
-   # Windows
-   python -m venv venv
-   venv\Scripts\activate
 
-   # Mac/Linux
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
+bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Mac/Linux
+python3 -m venv venv
+source venv/bin/activate
 
 3. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-4. **Run the Application**
-   ```bash
-   python app.py
-   ```
-   Open your browser and navigate to: `http://127.0.0.1:5000`
+bash
+pip install -r requirements.txt
 
-## 🌍 Deployment
+Set up Environment Variables
+Create a .env file:
 
-This app is ready for deployment on platforms like **Render**, **Railway**, or **Heroku**.
+4. **env**
+FLASK_DEBUG=True
+SECRET_KEY=your-super-secret-key-here
+DATABASE_URL=sqlite:///site.db
 
-### Deploy to Render
+5. **Run the Application**
 
-1. Push your code to GitHub.
-2. Create a new **Web Service** on [Render](https://render.com/).
-3. Connect your repository.
-4. Use the following settings:
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `gunicorn app:app`
-5. Click **Create Web Service**. Your site is now live!
+bash
+python app.py
+Open your browser and navigate to: http://127.0.0.1:5000
 
-## 📂 Project Structure
 
-```
-/
-├── app.py              # Main Flask Application
-├── requirements.txt    # Python Dependencies
-├── Procfile            # Deployment Command
+
+**📂 Project Structure**
+text
+My-Portfolio/
+│
+├── app.py                 # Main Flask application
+├── requirements.txt       # Python dependencies
+├── Procfile              # Render deployment config
+├── .env                  # Environment variables (local)
+├── .gitignore            # Git ignore rules
+│
 ├── static/
-│   ├── css/            # Stylesheets
-│   └── js/             # Interactive Scripts (Background, Main)
-└── templates/          # HTML Templates (Jinja2)
-    ├── base.html       # Base Layout
-    ├── home.html       # Landing Page
-    ├── projects.html   # GitHub API Projects
-    └── ...
-```
-
-## 📬 Contact
-
-- **GitHub**: [PrajwalK01](https://github.com/PrajwalK01)
-- **Portfolio**: [Visit Live Site](https://prajwal-portfolio-n1zb.onrender.com/)
-
----
-© 2026 Prajwal. Built with -Gravity.
+│   ├── css/
+│   │   └── style.css     # All styles
+│   └── js/
+│       ├── dimension_bg.js  # 4D background animation
+│       └── main.js        # UI interactions
+│
+└── templates/
+    ├── base.html         # Base template
+    ├── home.html         # Landing page
+    ├── about.html        # About me page
+    ├── projects.html     # GitHub projects
+    ├── skills.html       # Skills matrix
+    ├── 404.html          # Not found page
+    └── 500.html          # Server error page

@@ -2,18 +2,72 @@
 
 {% block content %}
 <div class="page-container" id="skills-page">
-    <h2 class="section-title">Skillset</h2>
-    <div class="solar-system-skills">
-        <!-- Center Star -->
-        <div class="sun"><i class="fas fa-code"></i></div>
+    <h2 class="section-title glitch-text" data-text=">_ SKILL_MATRIX">>_ SKILL_MATRIX</h2>
+    
+    <div class="skills-matrix">
+        <!-- Skill Categories -->
+        <div class="skill-category">
+            <h3><i class="fas fa-terminal"></i> Languages</h3>
+            <div class="skill-items">
+                <div class="skill-item" data-level="90">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-level="85">
+                    <span>C++</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-level="80">
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- Planets -->
-        <div class="planet p-python" title="Python"><i class="fab fa-python"></i></div>
-        <div class="planet p-cpp" title="C++"><i class="fas fa-c"></i></div> <!-- Using fa-c or similar -->
-        <div class="planet p-flask" title="Flask"><i class="fas fa-flask"></i></div>
-        <div class="planet p-js" title="JavaScript"><i class="fab fa-js"></i></div>
-        <div class="planet p-html" title="HTML"><i class="fab fa-html5"></i></div>
-        <div class="planet p-css" title="CSS"><i class="fab fa-css3-alt"></i></div>
+        <div class="skill-category">
+            <h3><i class="fas fa-flask"></i> Frameworks</h3>
+            <div class="skill-items">
+                <div class="skill-item" data-level="85">
+                    <span>Flask</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-level="75">
+                    <span>React</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Web Technologies</h3>
+            <div class="skill-items">
+                <div class="skill-item" data-level="90">
+                    <span>HTML5</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-level="85">
+                    <span>CSS3</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Matrix Code Rain Effect -->
+    <canvas id="matrix-rain" class="matrix-rain"></canvas>
 </div>
 {% endblock %}
