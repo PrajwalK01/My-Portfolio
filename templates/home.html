@@ -2,84 +2,252 @@
 
 {% block content %}
 <div class="home-container">
-    <!-- Profile Logo Section -->
-    <div class="profile-section">
-        {% if profile and profile.avatar_url %}
-        <div class="profile-logo">
-            <img src="{{ profile.avatar_url }}" alt="Prajwal's Avatar" class="avatar">
-            <div class="avatar-glow"></div>
-        </div>
-        {% else %}
-        <div class="profile-logo default-logo">
-            <i class="fas fa-user-astronaut"></i>
-        </div>
-        {% endif %}
-    </div>
 
-    <!-- Matrix-style Hacking Text -->
-    <div class="welcome-wrapper">
-        <div class="glitch-text" data-text=">_ SYSTEM_ACCESS.exe">>_ SYSTEM_ACCESS.exe</div>
-        
-        <!-- Your name with glitch effect -->
-        <div class="user-name">
-            <span class="prompt">>></span>
-            <span class="name-glitch" data-text="PRAJWAL">PRAJWAL</span>
-            <span class="cursor-blink">_</span>
-        </div>
-        
-        <div class="terminal-line">
-            <span class="prompt">$</span>
-            <span class="typed-text"></span>
-            <span class="cursor">&nbsp;</span>
+    <!-- Boot sequence overlay -->
+    <div id="boot-screen">
+        <div class="boot-content">
+            <div class="boot-logo">
+                <span class="boot-bracket">[</span>
+                <span class="boot-pk">PK</span>
+                <span class="boot-bracket">]</span>
+            </div>
+            <div class="boot-lines" id="boot-lines"></div>
+            <div class="boot-progress-wrap">
+                <div class="boot-progress-bar" id="boot-progress"></div>
+            </div>
         </div>
     </div>
 
-    <div class="hanging-cards-container">
-        <!-- Card 1: About -->
-        <a href="{{ url_for('about') }}" class="hanging-card">
-            <div class="thread"></div>
-            <div class="card-body">
-                <i class="fas fa-user-secret"></i>
-                <span>>_ ABOUT.exe</span>
-            </div>
-        </a>
+    <!-- Main content (revealed after boot) -->
+    <div class="hero-content" id="hero-content" style="opacity:0;">
 
-        <!-- Card 2: Projects -->
-        <a href="{{ url_for('projects') }}" class="hanging-card">
-            <div class="thread"></div>
-            <div class="card-body">
-                <i class="fas fa-code-branch"></i>
-                <span>>_ PROJECTS.exe</span>
+        <!-- Avatar Section -->
+        <div class="avatar-section">
+            {% if profile and profile.avatar_url %}
+            <div class="avatar-ring-wrap">
+                <div class="avatar-ring ring-1"></div>
+                <div class="avatar-ring ring-2"></div>
+                <div class="avatar-ring ring-3"></div>
+                <div class="avatar-hex-frame">
+                    <img src="{{ profile.avatar_url }}" alt="Prajwal K" class="hero-avatar">
+                </div>
+                <div class="avatar-scan-line"></div>
             </div>
-        </a>
-
-        <!-- Card 3: Skills -->
-        <a href="{{ url_for('skills') }}" class="hanging-card">
-            <div class="thread"></div>
-            <div class="card-body">
-                <i class="fas fa-microchip"></i>
-                <span>>_ SKILLS.exe</span>
+            {% else %}
+            <div class="avatar-ring-wrap">
+                <div class="avatar-ring ring-1"></div>
+                <div class="avatar-ring ring-2"></div>
+                <div class="avatar-hex-frame default-avatar">
+                    <i class="fas fa-user-secret"></i>
+                </div>
             </div>
-        </a>
-    </div>
+            {% endif %}
+            <div class="avatar-status">
+                <span class="status-dot"></span>
+                <span class="status-text">AVAILABLE FOR HIRE</span>
+            </div>
+        </div>
 
-    <!-- Social Links Section -->
-    <div class="social-links-container">
-        <h3 class="social-title">>_ CONNECT.exe</h3>
-        <div class="social-links">
-            <a href="https://github.com/PrajwalK01" target="_blank" class="social-link" title="GitHub">
+        <!-- Identity Block -->
+        <div class="identity-block">
+            <div class="sys-label">// INITIALIZING IDENTITY MODULE</div>
+            <h1 class="hero-name">
+                <span class="name-line">
+                    <span class="name-prefix">&gt;&gt;</span>
+                    <span class="name-glitch" data-text="PRAJWAL">PRAJWAL</span>
+                </span>
+                <span class="name-line name-line-2">
+                    <span class="name-glitch-sub" data-text="K_">K<span class="cursor-block">_</span></span>
+                </span>
+            </h1>
+            <div class="hero-role">
+                <span class="role-prefix">$ whoami &gt;</span>
+                <span class="typed-role" id="typed-role"></span>
+                <span class="type-cursor">|</span>
+            </div>
+            <div class="hero-tagline">
+                <span class="tag-bracket">&lt;</span>
+                Full Stack Developer • Systems Programmer • Open Source Builder
+                <span class="tag-bracket">/&gt;</span>
+            </div>
+        </div>
+
+        <!-- 3D Navigation Cards -->
+        <div class="nav-cards-3d" id="nav-cards">
+            <a href="{{ url_for('about') }}" class="card-3d" data-tilt>
+                <div class="card-3d-inner">
+                    <div class="card-glow"></div>
+                    <div class="card-circuit"></div>
+                    <div class="card-icon-wrap">
+                        <i class="fas fa-user-secret card-icon"></i>
+                    </div>
+                    <div class="card-label">
+                        <span class="card-cmd">&gt;_</span> ABOUT.exe
+                    </div>
+                    <div class="card-desc">Profile & Background</div>
+                    <div class="card-arrow"><i class="fas fa-chevron-right"></i></div>
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                </div>
+            </a>
+
+            <a href="{{ url_for('projects') }}" class="card-3d card-3d-featured" data-tilt>
+                <div class="card-3d-inner">
+                    <div class="card-glow"></div>
+                    <div class="card-circuit"></div>
+                    <div class="card-badge">FEATURED</div>
+                    <div class="card-icon-wrap">
+                        <i class="fas fa-code-branch card-icon"></i>
+                    </div>
+                    <div class="card-label">
+                        <span class="card-cmd">&gt;_</span> PROJECTS.exe
+                    </div>
+                    <div class="card-desc">GitHub Repositories</div>
+                    <div class="card-arrow"><i class="fas fa-chevron-right"></i></div>
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                </div>
+            </a>
+
+            <a href="{{ url_for('skills') }}" class="card-3d" data-tilt>
+                <div class="card-3d-inner">
+                    <div class="card-glow"></div>
+                    <div class="card-circuit"></div>
+                    <div class="card-icon-wrap">
+                        <i class="fas fa-microchip card-icon"></i>
+                    </div>
+                    <div class="card-label">
+                        <span class="card-cmd">&gt;_</span> SKILLS.exe
+                    </div>
+                    <div class="card-desc">Tech Stack & Tools</div>
+                    <div class="card-arrow"><i class="fas fa-chevron-right"></i></div>
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Social Bar -->
+        <div class="social-bar">
+            <a href="https://github.com/PrajwalK01" target="_blank" class="social-btn" title="GitHub">
                 <i class="fab fa-github"></i>
                 <span>GitHub</span>
+                <div class="social-btn-glow"></div>
             </a>
-            <a href="mailto:prajwal.k@abhyudayakkss.org" class="social-link" title="Email">
-                <i class="fas fa-envelope"></i>
-                <span>Email</span>
-            </a>
-            <a href="https://linkedin.com/in/prajwal" target="_blank" class="social-link" title="LinkedIn">
+            <div class="social-divider"></div>
+            <a href="https://linkedin.com/in/prajwal" target="_blank" class="social-btn" title="LinkedIn">
                 <i class="fab fa-linkedin"></i>
                 <span>LinkedIn</span>
+                <div class="social-btn-glow"></div>
+            </a>
+            <div class="social-divider"></div>
+            <a href="mailto:prajwal.k@abhyudayakkss.org" class="social-btn" title="Email">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+                <div class="social-btn-glow"></div>
             </a>
         </div>
-    </div>
+
+    </div><!-- end hero-content -->
 </div>
+
+<script>
+// ── Boot Sequence ──────────────────────────────────────────────
+const bootLines = [
+    "Initializing BIOS v3.0.7...",
+    "Loading kernel modules...",
+    "Mounting filesystem... [OK]",
+    "Connecting to neural network... [OK]",
+    "Loading portfolio assets...",
+    "Decrypting identity matrix...",
+    "Establishing secure connection... [OK]",
+    "ACCESS GRANTED — WELCOME"
+];
+
+const bootEl   = document.getElementById('boot-lines');
+const progressEl = document.getElementById('boot-progress');
+const bootScreen = document.getElementById('boot-screen');
+const heroContent = document.getElementById('hero-content');
+
+let lineIndex = 0;
+function showNextLine() {
+    if (lineIndex < bootLines.length) {
+        const p = document.createElement('p');
+        p.textContent = '$ ' + bootLines[lineIndex];
+        p.style.animationDelay = '0s';
+        bootEl.appendChild(p);
+        progressEl.style.width = ((lineIndex + 1) / bootLines.length * 100) + '%';
+        lineIndex++;
+        const delay = lineIndex === bootLines.length ? 300 : Math.random() * 200 + 100;
+        setTimeout(showNextLine, delay);
+    } else {
+        setTimeout(() => {
+            bootScreen.classList.add('boot-fade-out');
+            setTimeout(() => {
+                bootScreen.style.display = 'none';
+                heroContent.style.opacity = '1';
+                heroContent.style.animation = 'heroReveal 0.8s ease forwards';
+            }, 600);
+        }, 500);
+    }
+}
+setTimeout(showNextLine, 400);
+
+// ── Typed Role ─────────────────────────────────────────────────
+const roles = [
+    "Full Stack Developer",
+    "Systems Programmer",
+    "Python Engineer",
+    "C++ Developer",
+    "Flask Architect",
+    "Open Source Builder"
+];
+let rIdx = 0, cIdx = 0, deleting = false;
+const roleEl = document.getElementById('typed-role');
+
+function typeRole() {
+    const current = roles[rIdx];
+    if (!deleting) {
+        roleEl.textContent = current.slice(0, cIdx + 1);
+        cIdx++;
+        if (cIdx === current.length) {
+            deleting = true;
+            setTimeout(typeRole, 1800);
+            return;
+        }
+    } else {
+        roleEl.textContent = current.slice(0, cIdx - 1);
+        cIdx--;
+        if (cIdx === 0) {
+            deleting = false;
+            rIdx = (rIdx + 1) % roles.length;
+        }
+    }
+    setTimeout(typeRole, deleting ? 60 : 90);
+}
+setTimeout(typeRole, 3500);
+
+// ── 3D Card Tilt Effect ────────────────────────────────────────
+document.querySelectorAll('[data-tilt]').forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const cx = rect.width / 2;
+        const cy = rect.height / 2;
+        const rotX = ((y - cy) / cy) * -12;
+        const rotY = ((x - cx) / cx) * 12;
+        card.style.transform = `perspective(600px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale3d(1.04,1.04,1.04)`;
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)';
+    });
+});
+</script>
 {% endblock %}

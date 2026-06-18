@@ -110,6 +110,10 @@ def projects():
 def skills():
     return render_template('skills.html', title=">_ Skills")
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', title=">_ Contact")
+
 # Error handlers
 @app.errorhandler(404)
 def not_found_error(error):

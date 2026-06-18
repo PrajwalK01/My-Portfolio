@@ -2,72 +2,257 @@
 
 {% block content %}
 <div class="page-container" id="skills-page">
-    <h2 class="section-title glitch-text" data-text=">_ SKILL_MATRIX">>_ SKILL_MATRIX</h2>
-    
-    <div class="skills-matrix">
-        <!-- Skill Categories -->
-        <div class="skill-category">
-            <h3><i class="fas fa-terminal"></i> Languages</h3>
-            <div class="skill-items">
-                <div class="skill-item" data-level="90">
-                    <span>Python</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 90%"></div>
+
+    <div class="page-header">
+        <h2 class="page-title glitch-text" data-text="SKILL_MATRIX.exe">SKILL_MATRIX.exe</h2>
+        <div class="page-title-line"></div>
+        <p class="page-subtitle">// Loaded modules &amp; proficiency levels</p>
+    </div>
+
+    <!-- Skill Categories Grid -->
+    <div class="skills-3d-grid">
+
+        <!-- Languages -->
+        <div class="skill-panel" data-panel>
+            <div class="skill-panel-header">
+                <i class="fas fa-terminal"></i>
+                <span>LANGUAGES</span>
+                <div class="panel-corner tl"></div>
+                <div class="panel-corner tr"></div>
+            </div>
+            <div class="skill-panel-body">
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-pct">90%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="90"></div>
+                        <div class="skill-bar-glow"></div>
                     </div>
                 </div>
-                <div class="skill-item" data-level="85">
-                    <span>C++</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 85%"></div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fas fa-code"></i> C++</span>
+                        <span class="skill-pct">85%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="85" data-color="#ff00aa"></div>
+                        <div class="skill-bar-glow" style="--glow-c:#ff00aa"></div>
                     </div>
                 </div>
-                <div class="skill-item" data-level="80">
-                    <span>JavaScript</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 80%"></div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-pct">80%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="80" data-color="#f7df1e"></div>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fas fa-c"></i> C</span>
+                        <span class="skill-pct">75%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="75" data-color="#a259ff"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="skill-category">
-            <h3><i class="fas fa-flask"></i> Frameworks</h3>
-            <div class="skill-items">
-                <div class="skill-item" data-level="85">
-                    <span>Flask</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 85%"></div>
+        <!-- Frameworks -->
+        <div class="skill-panel" data-panel>
+            <div class="skill-panel-header">
+                <i class="fas fa-layer-group"></i>
+                <span>FRAMEWORKS</span>
+                <div class="panel-corner tl"></div>
+                <div class="panel-corner tr"></div>
+            </div>
+            <div class="skill-panel-body">
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fas fa-flask"></i> Flask</span>
+                        <span class="skill-pct">90%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="90"></div>
                     </div>
                 </div>
-                <div class="skill-item" data-level="75">
-                    <span>React</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 75%"></div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fab fa-react"></i> React</span>
+                        <span class="skill-pct">75%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="75" data-color="#61dafb"></div>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fas fa-database"></i> SQLAlchemy</span>
+                        <span class="skill-pct">80%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="80" data-color="#ff8c00"></div>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fas fa-cube"></i> OpenGL</span>
+                        <span class="skill-pct">70%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="70" data-color="#a259ff"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="skill-category">
-            <h3><i class="fas fa-code"></i> Web Technologies</h3>
-            <div class="skill-items">
-                <div class="skill-item" data-level="90">
-                    <span>HTML5</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 90%"></div>
+        <!-- Web Technologies -->
+        <div class="skill-panel" data-panel>
+            <div class="skill-panel-header">
+                <i class="fas fa-globe"></i>
+                <span>WEB TECH</span>
+                <div class="panel-corner tl"></div>
+                <div class="panel-corner tr"></div>
+            </div>
+            <div class="skill-panel-body">
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-pct">95%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="95" data-color="#e34c26"></div>
                     </div>
                 </div>
-                <div class="skill-item" data-level="85">
-                    <span>CSS3</span>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 85%"></div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-pct">90%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="90" data-color="#264de4"></div>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fas fa-wind"></i> REST APIs</span>
+                        <span class="skill-pct">85%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="85"></div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Tools & DevOps -->
+        <div class="skill-panel" data-panel>
+            <div class="skill-panel-header">
+                <i class="fas fa-tools"></i>
+                <span>TOOLS & OPS</span>
+                <div class="panel-corner tl"></div>
+                <div class="panel-corner tr"></div>
+            </div>
+            <div class="skill-panel-body">
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-pct">90%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="90" data-color="#f05032"></div>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fab fa-linux"></i> Linux</span>
+                        <span class="skill-pct">80%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="80" data-color="#ffcc00"></div>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="skill-pct">65%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="65" data-color="#2496ed"></div>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-meta">
+                        <span class="skill-name"><i class="fas fa-database"></i> SQLite/MySQL</span>
+                        <span class="skill-pct">75%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-bar-fill" data-width="75" data-color="#00758f"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- end skills grid -->
+
+    <!-- Tech Orbit Tags -->
+    <div class="tech-orbit-section">
+        <h3 class="orbit-title">// TECH STACK</h3>
+        <div class="tech-cloud">
+            <span class="tech-tag t1">Python</span>
+            <span class="tech-tag t2">Flask</span>
+            <span class="tech-tag t3">C++</span>
+            <span class="tech-tag t4">JavaScript</span>
+            <span class="tech-tag t5">React</span>
+            <span class="tech-tag t6">OpenGL</span>
+            <span class="tech-tag t7">SQLAlchemy</span>
+            <span class="tech-tag t8">Git</span>
+            <span class="tech-tag t9">Linux</span>
+            <span class="tech-tag t10">Docker</span>
+            <span class="tech-tag t11">REST API</span>
+            <span class="tech-tag t12">HTML5</span>
+            <span class="tech-tag t13">CSS3</span>
         </div>
     </div>
 
-    <!-- Matrix Code Rain Effect -->
-    <canvas id="matrix-rain" class="matrix-rain"></canvas>
 </div>
+
+<script>
+// Animate skill bars on scroll
+const bars = document.querySelectorAll('.skill-bar-fill');
+const panelObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+                const w = bar.dataset.width;
+                const color = bar.dataset.color || '#00f7ff';
+                bar.style.background = `linear-gradient(90deg, ${color}, ${color}88)`;
+                bar.style.boxShadow = `0 0 8px ${color}`;
+                setTimeout(() => { bar.style.width = w + '%'; }, 100);
+            });
+            panelObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.skill-panel').forEach(panel => panelObserver.observe(panel));
+
+// Tilt for skill panels
+document.querySelectorAll('[data-panel]').forEach(panel => {
+    panel.addEventListener('mousemove', e => {
+        const rect = panel.getBoundingClientRect();
+        const x = e.clientX - rect.left, y = e.clientY - rect.top;
+        const cx = rect.width/2, cy = rect.height/2;
+        const rX = ((y-cy)/cy)*-5, rY = ((x-cx)/cx)*5;
+        panel.style.transform = `perspective(800px) rotateX(${rX}deg) rotateY(${rY}deg) translateZ(10px)`;
+    });
+    panel.addEventListener('mouseleave', () => {
+        panel.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) translateZ(0)';
+    });
+});
+</script>
 {% endblock %}

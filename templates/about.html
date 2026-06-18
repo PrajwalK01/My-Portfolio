@@ -2,55 +2,169 @@
 
 {% block content %}
 <div class="page-container" id="about-page">
-    <div class="about-card">
-        <div class="about-header">
-            <div class="profile-icon">
-                <i class="fas fa-user-astronaut"></i>
+
+    <div class="page-header">
+        <h2 class="page-title glitch-text" data-text="ABOUT.exe">ABOUT.exe</h2>
+        <div class="page-title-line"></div>
+        <p class="page-subtitle">// Personal profile &amp; system overview</p>
+    </div>
+
+    <div class="about-layout">
+
+        <!-- Left: Profile Card -->
+        <div class="profile-card-3d" data-tilt-about>
+            <div class="profile-card-inner">
+                <div class="profile-card-glow"></div>
+                <div class="profile-avatar-wrap">
+                    <img src="https://github.com/PrajwalK01.png" alt="Prajwal K" class="profile-img-large">
+                    <div class="profile-img-ring"></div>
+                    <div class="profile-img-scan"></div>
+                </div>
+                <div class="profile-name-block">
+                    <h3 class="profile-name-big">PRAJWAL K</h3>
+                    <p class="profile-role-tag">Full Stack Developer</p>
+                </div>
+                <div class="profile-badges">
+                    <span class="badge badge-green"><i class="fas fa-circle"></i> Available</span>
+                    <span class="badge badge-blue"><i class="fas fa-map-marker-alt"></i> India</span>
+                </div>
+                <div class="profile-quick-links">
+                    <a href="https://github.com/PrajwalK01" target="_blank" class="qlink"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/prajwal" target="_blank" class="qlink"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:prajwal.k@abhyudayakkss.org" class="qlink"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-            <h2 class="glitch-text" data-text=">_ PRAJWAL">>_ PRAJWAL</h2>
-            <p class="tagline">Full Stack Developer & Systems Programmer</p>
         </div>
-        
-        <div class="about-content">
-            <div class="about-text">
-                <div class="terminal-box">
-                    <div class="terminal-header">
-                        <span class="terminal-dot red"></span>
-                        <span class="terminal-dot yellow"></span>
-                        <span class="terminal-dot green"></span>
-                        <span class="terminal-title">about.exe</span>
+
+        <!-- Right: Terminal Info -->
+        <div class="about-right">
+
+            <!-- Terminal Box -->
+            <div class="terminal-3d">
+                <div class="term-titlebar">
+                    <div class="term-dots">
+                        <span class="tdot red"></span>
+                        <span class="tdot yellow"></span>
+                        <span class="tdot green"></span>
                     </div>
-                    <div class="terminal-body">
-                        <p><span class="prompt">$</span> cat profile.txt</p>
-                        <p class="output">I am a passionate developer exploring the cosmos of code. My journey began with systems programming in C++ and has evolved into creating dynamic web experiences with Python and Flask.</p>
-                        
-                        <p><span class="prompt">$</span> echo "Philosophy"</p>
-                        <p class="output">Like a black hole, my curiosity is infinite. I build applications that not only function flawlessly but also look stunning, defying the gravity of boring design.</p>
-                        
-                        <p><span class="prompt">$</span> ls -la /experience/</p>
-                        <p class="output">- 3+ years of development experience<br>- Systems programming in C++<br>- Full-stack web development<br>- Open source contributor</p>
+                    <span class="term-title">prajwal@portfolio:~$ bash about.sh</span>
+                    <div class="term-menu-dots"><span></span><span></span><span></span></div>
+                </div>
+                <div class="term-body">
+                    <div class="term-line">
+                        <span class="tc-prompt">➜</span>
+                        <span class="tc-path">~/profile</span>
+                        <span class="tc-cmd"> cat bio.txt</span>
+                    </div>
+                    <div class="term-output">
+                        I'm a passionate developer who loves exploring the boundaries of software. 
+                        With a strong foundation in systems programming (<span class="tc-hl">C++</span>) and 
+                        web development (<span class="tc-hl">Python/Flask</span>), I build applications 
+                        that are functional, performant, and visually striking.
+                    </div>
+
+                    <div class="term-line mt10">
+                        <span class="tc-prompt">➜</span>
+                        <span class="tc-path">~/profile</span>
+                        <span class="tc-cmd"> cat philosophy.txt</span>
+                    </div>
+                    <div class="term-output">
+                        Code is art. Every function is a brushstroke, every system an architecture. 
+                        I believe in writing code that's not just correct — but <span class="tc-hl">elegant</span>.
+                    </div>
+
+                    <div class="term-line mt10">
+                        <span class="tc-prompt">➜</span>
+                        <span class="tc-path">~/profile</span>
+                        <span class="tc-cmd"> ls -la experience/</span>
+                    </div>
+                    <div class="term-output">
+                        <div class="ls-row"><span class="ls-perm">drwxr-xr-x</span> <span class="ls-item">3+ years coding</span></div>
+                        <div class="ls-row"><span class="ls-perm">drwxr-xr-x</span> <span class="ls-item">15+ projects shipped</span></div>
+                        <div class="ls-row"><span class="ls-perm">-rwxr-xr-x</span> <span class="ls-item">Systems programming in C++</span></div>
+                        <div class="ls-row"><span class="ls-perm">-rwxr-xr-x</span> <span class="ls-item">Full-stack web development</span></div>
+                        <div class="ls-row"><span class="ls-perm">-rwxr-xr-x</span> <span class="ls-item">Open source contributor</span></div>
+                        <div class="ls-row"><span class="ls-perm">-rwxr-xr-x</span> <span class="ls-item">3D graphics with OpenGL</span></div>
+                    </div>
+
+                    <div class="term-line mt10">
+                        <span class="tc-prompt">➜</span>
+                        <span class="tc-path">~/profile</span>
+                        <span class="tc-cursor-end">█</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="quick-stats">
-                <div class="stat-item">
-                    <i class="fas fa-code-branch"></i>
-                    <span class="stat-value">15+</span>
-                    <span class="stat-label">Projects</span>
+
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="stat-hex">
+                    <div class="stat-hex-inner">
+                        <i class="fas fa-code-branch"></i>
+                        <span class="stat-num" data-target="15">0</span>
+                        <span class="stat-lbl">Projects</span>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i>
-                    <span class="stat-value">3+</span>
-                    <span class="stat-label">Years Coding</span>
+                <div class="stat-hex">
+                    <div class="stat-hex-inner">
+                        <i class="fas fa-clock"></i>
+                        <span class="stat-num" data-target="3">0</span>
+                        <span class="stat-lbl">Years</span>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <i class="fas fa-coffee"></i>
-                    <span class="stat-value">∞</span>
-                    <span class="stat-label">Coffee Consumed</span>
+                <div class="stat-hex">
+                    <div class="stat-hex-inner">
+                        <i class="fas fa-star"></i>
+                        <span class="stat-num" data-target="50">0</span>
+                        <span class="stat-lbl">Stars</span>
+                    </div>
+                </div>
+                <div class="stat-hex">
+                    <div class="stat-hex-inner">
+                        <i class="fas fa-coffee"></i>
+                        <span class="stat-num">∞</span>
+                        <span class="stat-lbl">Coffee</span>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
+
+<script>
+// Tilt for profile card
+const profileCard = document.querySelector('[data-tilt-about]');
+if (profileCard) {
+    profileCard.addEventListener('mousemove', e => {
+        const rect = profileCard.getBoundingClientRect();
+        const x = e.clientX - rect.left, y = e.clientY - rect.top;
+        const cx = rect.width/2, cy = rect.height/2;
+        const rX = ((y-cy)/cy)*-8, rY = ((x-cx)/cx)*8;
+        profileCard.style.transform = `perspective(800px) rotateX(${rX}deg) rotateY(${rY}deg) scale3d(1.02,1.02,1.02)`;
+    });
+    profileCard.addEventListener('mouseleave', () => {
+        profileCard.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)';
+    });
+}
+
+// Counter animation
+const counters = document.querySelectorAll('.stat-num[data-target]');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.dataset.target);
+            let count = 0;
+            const step = Math.ceil(target / 40);
+            const timer = setInterval(() => {
+                count = Math.min(count + step, target);
+                el.textContent = count + '+';
+                if (count >= target) clearInterval(timer);
+            }, 40);
+            observer.unobserve(el);
+        }
+    });
+}, { threshold: 0.5 });
+counters.forEach(c => observer.observe(c));
+</script>
 {% endblock %}

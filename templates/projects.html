@@ -2,78 +2,134 @@
 
 {% block content %}
 <div class="page-container" id="projects-page">
-    <div class="projects-header">
-        <h2 class="section-title glitch-text" data-text=">_ REPOSITORIES">>_ REPOSITORIES</h2>
-        <a href="https://github.com/PrajwalK01" target="_blank" class="btn">
-            <i class="fab fa-github"></i> VIEW PROFILE
+
+    <div class="page-header">
+        <h2 class="page-title glitch-text" data-text="REPOSITORIES.exe">REPOSITORIES.exe</h2>
+        <div class="page-title-line"></div>
+        <p class="page-subtitle">// GitHub projects &amp; open source contributions</p>
+        <a href="https://github.com/PrajwalK01" target="_blank" class="gh-profile-btn">
+            <i class="fab fa-github"></i> VIEW GITHUB PROFILE
+            <span class="btn-shine"></span>
         </a>
     </div>
 
-    <div class="projects-grid" id="repos-container">
+    <!-- Filter Bar -->
+    <div class="filter-bar" id="filter-bar">
+        <span class="filter-label">// FILTER:</span>
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="Python">Python</button>
+        <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+        <button class="filter-btn" data-filter="C++">C++</button>
+        <button class="filter-btn" data-filter="HTML">HTML</button>
+    </div>
+
+    <div class="projects-3d-grid" id="repos-container">
         {% if repos %}
             {% for repo in repos %}
-            <div class="project-card" onclick="window.open('{{ repo.html_url }}', '_blank')">
-                <div class="card-header">
-                    <i class="fas fa-terminal"></i>
-                    <h3>{{ repo.name }}</h3>
-                </div>
-                <p>{{ repo.description or 'No description provided.' }}</p>
-                <div class="repo-stats">
-                    {% if repo.language %}
-                    <span class="language">
-                        <!-- Fix: Use data attribute instead of inline style -->
-                        <span class="lang-dot" data-language="{{ repo.language }}"></span>
-                        {{ repo.language }}
-                    </span>
+            <div class="repo-card-3d" data-lang="{{ repo.language or 'Other' }}" onclick="window.open('{{ repo.html_url }}', '_blank')">
+                <div class="repo-card-inner">
+                    <div class="repo-card-glow"></div>
+                    <div class="repo-card-scan"></div>
+
+                    <div class="repo-card-top">
+                        <div class="repo-icon-wrap">
+                            <i class="fas fa-terminal repo-icon"></i>
+                        </div>
+                        <div class="repo-name-wrap">
+                            <h3 class="repo-name">{{ repo.name }}</h3>
+                            {% if repo.language %}
+                            <span class="repo-lang-badge">
+                                <span class="lang-dot-3d" data-language="{{ repo.language }}"></span>
+                                {{ repo.language }}
+                            </span>
+                            {% endif %}
+                        </div>
+                        <div class="repo-link-icon"><i class="fas fa-external-link-alt"></i></div>
+                    </div>
+
+                    <p class="repo-desc">{{ repo.description or 'No description provided — click to view on GitHub.' }}</p>
+
+                    <div class="repo-stats-row">
+                        <span class="rs"><i class="fas fa-star"></i> {{ repo.stargazers_count }}</span>
+                        <span class="rs"><i class="fas fa-code-branch"></i> {{ repo.forks_count }}</span>
+                        {% if repo.open_issues_count %}
+                        <span class="rs"><i class="fas fa-circle-dot"></i> {{ repo.open_issues_count }}</span>
+                        {% endif %}
+                    </div>
+
+                    {% if repo.topics %}
+                    <div class="repo-topics-row">
+                        {% for topic in repo.topics[:4] %}
+                        <span class="topic-pill">{{ topic }}</span>
+                        {% endfor %}
+                    </div>
                     {% endif %}
-                    <span><i class="fas fa-star"></i> {{ repo.stargazers_count }}</span>
-                    <span><i class="fas fa-code-branch"></i> {{ repo.forks_count }}</span>
+
+                    <div class="repo-card-corners">
+                        <div class="rc-corner rc-tl"></div>
+                        <div class="rc-corner rc-tr"></div>
+                        <div class="rc-corner rc-bl"></div>
+                        <div class="rc-corner rc-br"></div>
+                    </div>
                 </div>
-                {% if repo.topics %}
-                <div class="repo-topics">
-                    {% for topic in repo.topics[:3] %}
-                    <span class="topic">{{ topic }}</span>
-                    {% endfor %}
-                </div>
-                {% endif %}
             </div>
             {% endfor %}
         {% else %}
             <div class="no-repos">
-                <i class="fas fa-code-branch"></i>
-                <p>No repositories found. Check GitHub profile directly.</p>
-                <a href="https://github.com/PrajwalK01" target="_blank" class="btn">Visit GitHub</a>
+                <div class="no-repos-icon"><i class="fas fa-satellite-dish"></i></div>
+                <p class="no-repos-msg">No repositories found. API may be rate-limited.</p>
+                <a href="https://github.com/PrajwalK01" target="_blank" class="gh-profile-btn">
+                    <i class="fab fa-github"></i> Visit GitHub
+                </a>
             </div>
         {% endif %}
     </div>
+
 </div>
 
-<!-- Add this script to handle language colors -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const langDots = document.querySelectorAll('.lang-dot');
-    
-    const languageColors = {
-        'Python': '#3572A5',
-        'JavaScript': '#f7df1e',
-        'HTML': '#e34c26',
-        'CSS': '#563d7c',
-        'C++': '#f34b7d',
-        'Java': '#b07219',
-        'TypeScript': '#3178c6',
-        'PHP': '#4f5d95',
-        'Ruby': '#701516',
-        'Go': '#00ADD8',
-        'Rust': '#dea584',
-        'Shell': '#89e051',
-        'C': '#555555',
-        'C#': '#178600'
-    };
-    
-    langDots.forEach(dot => {
-        const language = dot.getAttribute('data-language');
-        const color = languageColors[language] || '#00f7ff'; // Default to neon blue
-        dot.style.backgroundColor = color;
+// Language colors
+const langColors = {
+    Python:'#3572A5', JavaScript:'#f7df1e', HTML:'#e34c26',
+    CSS:'#563d7c', 'C++':'#f34b7d', Java:'#b07219',
+    TypeScript:'#3178c6', PHP:'#4f5d95', Ruby:'#701516',
+    Go:'#00ADD8', Rust:'#dea584', Shell:'#89e051',
+    C:'#555555', 'C#':'#178600', default:'#00f7ff'
+};
+document.querySelectorAll('.lang-dot-3d').forEach(dot => {
+    dot.style.background = langColors[dot.dataset.language] || langColors.default;
+    dot.style.boxShadow = `0 0 6px ${langColors[dot.dataset.language] || langColors.default}`;
+});
+
+// 3D Tilt on repo cards
+document.querySelectorAll('.repo-card-3d').forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left, y = e.clientY - rect.top;
+        const cx = rect.width/2, cy = rect.height/2;
+        const rX = ((y-cy)/cy)*-8, rY = ((x-cx)/cx)*8;
+        card.style.transform = `perspective(700px) rotateX(${rX}deg) rotateY(${rY}deg) scale3d(1.03,1.03,1.03)`;
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(700px) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)';
+    });
+});
+
+// Filter
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.repo-card-3d').forEach(card => {
+            if (filter === 'all' || card.dataset.lang === filter) {
+                card.style.display = '';
+                setTimeout(() => { card.style.opacity = '1'; card.style.transform = ''; }, 10);
+            } else {
+                card.style.opacity = '0';
+                setTimeout(() => { card.style.display = 'none'; }, 300);
+            }
+        });
     });
 });
 </script>

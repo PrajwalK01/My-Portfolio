@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO -->
-    <meta name="description" content="{% block meta_description %}Prajwal's developer portfolio - Exploring the cosmos of code with Python, Flask, and modern web technologies{% endblock %}">
-    <meta name="author" content="Prajwal">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="{{ title }} | Prajwal">
+    <meta name="description" content="{% block meta_description %}Prajwal K — Full Stack Developer & Systems Programmer. Python, Flask, C++, JavaScript.{% endblock %}">
+    <meta name="author" content="Prajwal K">
+    <meta property="og:title" content="{{ title }} | Prajwal K">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request.url }}">
-    
-    <title>{% block title %}{{ title }}{% endblock %} | Prajwal</title>
-    
-    <!-- Preconnect for fonts -->
+
+    <title>{% block title %}{{ title }}{% endblock %} | Prajwal K</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Icons (deferred) -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    </noscript>
-    
-    <!-- Favicon from GitHub -->
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
     <link rel="icon" type="image/png" href="https://github.com/PrajwalK01.png?size=32">
     <link rel="apple-touch-icon" href="https://github.com/PrajwalK01.png?size=180">
-    
-    <!-- Styles -->
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-
 <body>
-    <!-- Skip link for accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Background Canvas (decorative) -->
-    <div id="canvas-container" aria-hidden="true"></div>
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-    <!-- Navigation -->
+    <!-- Scanlines overlay -->
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <!-- Corner decorations -->
+    <div class="corner-decoration tl" aria-hidden="true"></div>
+    <div class="corner-decoration tr" aria-hidden="true"></div>
+    <div class="corner-decoration bl" aria-hidden="true"></div>
+    <div class="corner-decoration br" aria-hidden="true"></div>
+
+    <!-- HUD Top Bar -->
+    <div class="hud-bar top-hud" aria-hidden="true">
+        <span class="hud-item"><i class="fas fa-circle pulse-green"></i> SYSTEM ONLINE</span>
+        <span class="hud-item hud-center">[ PRAJWAL.K — PORTFOLIO v3.0 ]</span>
+        <span class="hud-item hud-right" id="hud-time">00:00:00</span>
+    </div>
+
     {% if request.endpoint != 'home' %}
     <nav class="top-nav" aria-label="Navigation">
         <a href="{{ url_for('home') }}" class="back-link" aria-label="Go back to home">
-            <i class="fas fa-terminal" aria-hidden="true"></i> ../Home
+            <span class="btn-bracket">[</span>
+            <i class="fas fa-terminal" aria-hidden="true"></i>
+            <span>../ROOT</span>
+            <span class="btn-bracket">]</span>
         </a>
+        <div class="nav-links-row">
+            <a href="{{ url_for('about') }}" class="nav-pill {% if request.endpoint == 'about' %}active{% endif %}">ABOUT</a>
+            <a href="{{ url_for('projects') }}" class="nav-pill {% if request.endpoint == 'projects' %}active{% endif %}">REPOS</a>
+            <a href="{{ url_for('skills') }}" class="nav-pill {% if request.endpoint == 'skills' %}active{% endif %}">SKILLS</a>
+            <a href="{{ url_for('contact') }}" class="nav-pill {% if request.endpoint == 'contact' %}active{% endif %}">CONTACT</a>
+        </div>
     </nav>
     {% endif %}
 
-    <!-- Main Content -->
     <main id="main-content" class="content-wrapper">
         {% block content %}{% endblock %}
     </main>
 
-    <!-- Footer (optional block) -->
     {% block footer %}{% endblock %}
 
-    <!-- Scripts -->
-    <script src="{{ url_for('static', filename='js/dimension_bg.js') }}" defer></script>
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bg3d.js') }}" defer></script>
     <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
-    
-    <!-- Fallback for noscript -->
+
     <noscript>
-        <div style="background: #050510; color: white; padding: 20px; text-align: center;">
-            JavaScript is required for the full experience. Please enable JavaScript for animations and interactive features.
+        <div style="background:#050510;color:#00f7ff;padding:20px;text-align:center;font-family:monospace;">
+            JavaScript is required for the full 3D experience.
         </div>
     </noscript>
 </body>
-
 </html>
